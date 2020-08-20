@@ -1,0 +1,191 @@
+.wrapper {
+  position: relative;
+  height: 60px;
+  padding: 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #202124;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  z-index: 5;
+}
+
+.logo {
+  width: 38px;
+  height: 38px;
+  box-sizing: content-box;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: #202124 !important;
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+.search {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.logoLabel {
+  margin: 0 137px 0 20px;
+  font-size: 16px;
+  color: white;
+  font-weight: 300;
+}
+
+.mainContainer {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
+
+  & :global(.ant-tabs-nav-container-scrolling) {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+.slogan {
+  color: #30373d;
+  font-size: 16px;
+  margin-left: 50px;
+}
+
+.avatar {
+  margin-left: 30px;
+  height: 44px;
+  width: 44px;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+.avatar img {
+  height: 100%;
+  width: 100%;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.favorite, .question, .statistic {
+  cursor: pointer;
+  margin-right: 15px;
+  height: 24px;
+  width: 28px;
+}
+
+.favoriteIcon, .questionIcon, .statisticIcon {
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.favoriteIcon {
+  background-image: url('assets/images/favorite.svg');
+  &:hover {
+    background-image: url('assets/images/favorite_hover.svg');
+  }
+}
+
+.statisticIcon {
+  margin-top: 2px;
+  background-image: url('assets/images/statistic.svg');
+  &:hover {
+    background-image: url('assets/images/statistic_hover.svg');
+  }
+}
+
+.questionIcon {
+  background-image: url('assets/images/question.svg');
+  &:hover {
+    background-image: url('assets/images/question_hover.svg');
+  }
+}
+
+.isNotFavoritePage {
+  color: #C4C6C8;
+}
+
+.notice {
+  cursor: pointer;
+  margin-right: 20px;
+  margin-top: 1px;
+}
+
+
+/*
+==========================================
+override ant styles
+ */
+
+.wrapper :global(.ant-tabs-bar) {
+  border: none !important;
+  margin: 0;
+}
+
+.wrapper :global(.ant-tabs-tab) {
+  line-height: 35px;
+  font-size: 16px;
+  padding: 12px 0;
+  color: #9e9e9e;
+}
+
+.wrapper :global(.ant-badge) div {
+  font-size: 16px;
+}
+
+.wrapper :global(.ant-tabs-nav .ant-tabs-tab:last-child) .agreementTab {
+  margin-right: 15px;
+}
+
+.agreementTab {
+  & :global(.ant-badge-count) {
+    top: -5px;
+    right: -5px;
+    padding: 0px;
+    min-width: 15px;
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+    line-height: 15px;
+    background: #BE1D30;
+    border-radius: 2px;
+    box-shadow: none;
+  }
+}
+
+.wrapper :global(.ant-tabs-tab:hover) {
+  color: white;
+}
+
+.wrapper :global(.ant-tabs-nav .ant-tabs-tab-active) {
+  color: white !important
+
+}
+
+.wrapper :global(.ant-tabs-nav-wrap) {
+  margin-bottom: 0;
+}
+
+.wrapper :global(.ant-tabs-nav-scroll) {
+  margin-bottom: -1px;
+}
+
+.wrapper :global(.ant-tabs-ink-bar) {
+  height: 4px;
+  margin-bottom: 0;
+  background: white;
+}
+
+.wrapper :global(.ant-tabs-nav) {
+  border: none !important;
+  text-decoration: none;
+  height: 60px;
+  margin-bottom: 1px;
+}
